@@ -1,0 +1,75 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+::selection {
+  background-color: #a37e7e;
+}
+.text-weak::selection {
+  color: white;
+}
+
+@font-face {
+  font-family: "Raleway";
+  src: url("assets/fonts/Raleway.ttf");
+}
+html {
+  font-family: "Raleway";
+}
+section {
+  background-color: #eeeceb;
+}
+.button {
+  @apply inline-block bg-brown text-white text-[18px] font-medium px-[30px] py-[20px];
+}
+
+.subtitle {
+  @apply text-lightBrown text-[18px] font-semibold leading-[26px];
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  @apply bg-lightBrown rounded-[50%] w-[48px] h-[48px] border-[2px] border-lightBrown;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  content: "";
+}
+
+.swiper-button-disabled {
+  background-color: transparent;
+  opacity: 1 !important;
+}
+
+.swiper-button-prev svg,
+.swiper-button-next svg {
+  fill: white;
+  width: 25px;
+  height: 25px;
+}
+
+.swiper-button-disabled svg {
+  @apply fill-lightBrown;
+}
+
+.reviews .swiper-wrapper {
+  width: 1030px;
+}
+
+.top-menu {
+  @apply w-full flex justify-center mt-[20px] z-50;
+}
+.top-menu_fixed {
+  @apply mt-0 fixed bg-white shadow-xl;
+}
+
+.top-menu__link {
+  @apply text-[18px] text-weak;
+}
+.top-menu__link_active {
+  @apply text-lightBrown font-semibold;
+}
