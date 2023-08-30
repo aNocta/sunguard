@@ -14,7 +14,7 @@ html {
 
 @font-face {
   font-family: "Raleway";
-  src: url("assets/fonts/Raleway.ttf");
+  src: url("./fonts/Raleway.ttf");
 }
 html {
   font-family: "Raleway";
