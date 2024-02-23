@@ -52,6 +52,9 @@ section {
   height: 25px;
 }
 
+.swiper-slide{
+  background-size: cover !important;
+}
 .swiper-button-disabled svg {
   @apply fill-lightBrown;
 }
